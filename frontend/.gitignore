@@ -1,0 +1,29 @@
+@"
+# Environment variables and API keys
+.env
+backend/.env
+*.env
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Database
+*.db
+instance/
+backend/instance/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules - 
+node_modules/
+frontend/node_modules/
+"@ | Out-File -FilePath .gitignore -Encoding utf8

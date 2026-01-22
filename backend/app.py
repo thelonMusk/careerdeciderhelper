@@ -11,7 +11,7 @@ def create_app():
     # Enable CORS for React frontend
     CORS(app, resources={r"/api/*": {"origins": "*"}})
     
-    # Initialize database
+    # Initialise database
     db.init_app(app)
     
     # Register blueprints
@@ -21,7 +21,7 @@ def create_app():
     with app.app_context():
         db.create_all()
         print("✅ Database initialized successfully")
-        print(f"🤖 Using Groq API with model: llama-3.3-70b-versatile")
+        print(f" Using Groq API with model: llama-3.3-70b-versatile")
     
     return app
 

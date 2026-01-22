@@ -15,7 +15,7 @@ class SearchHistory(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     search_type = db.Column(db.String(50))  # 'matcher', 'ideator', 'requirements'
-    search_query = db.Column(db.Text)       # ✅ renamed from 'query'
+    search_query = db.Column(db.Text)      
     results = db.Column(db.Text)            # Store as JSON string
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
